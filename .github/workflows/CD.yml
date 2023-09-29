@@ -20,4 +20,4 @@ jobs:
           registry : docker.io
           dockerfile : Dockerfile
           username : ${{ secrets.SUPER_USUARIO }}
-          password : ${{ secrets.1234 }}
+          password : ${{ secrets.CLAVE }}
