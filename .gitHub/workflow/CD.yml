@@ -12,14 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        name: Check out code
-
       - uses: mr-smithers-excellent/docker-build-push@v6
         name: Build & push Docker image
         with:
-          image: jeanvaes/guarder
-          tags: latest
-            registry: registry-url.io
-            dockerfile: Dockerfile
-            username: ${{ secrets.SUPER_USUARIO }}
-            password: ${{ secrets.1234 }}
+          image: juangomezru/finexo
+          tags : latest
+          registry : docker.io
+          dockerfile : Dockerfile
+          username : ${{ secrets.SUPER_USUARIO }}
+          password : ${{ secrets.1234 }}
